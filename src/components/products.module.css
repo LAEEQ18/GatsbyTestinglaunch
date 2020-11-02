@@ -1,0 +1,31 @@
+.page {
+  background: rgb(247, 246, 244);
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+
+.page div {
+  height: 17rem;
+}
+.page span {
+  margin-left: 2rem;
+  color: gray;
+}
+
+.page article {
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 760px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .page {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
